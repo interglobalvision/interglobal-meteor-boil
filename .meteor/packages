@@ -7,3 +7,10 @@
 meteor-platform
 autopublish
 insecure
+iron:router
+accounts-base
+accounts-password
+accounts-ui
+momentjs:moment
+stylus
+tap:i18n
