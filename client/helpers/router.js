@@ -19,7 +19,7 @@ Router.configure({
 var filters = {
 
   myFilter: function () {
-    // do something
+    this.next();
   },
 
   isLoggedIn: function() {
