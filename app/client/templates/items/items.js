@@ -1,23 +1,21 @@
-/* ---------------------------------------------------- +/
-
-## Items ##
-
-Code related to the items template
-
-/+ ---------------------------------------------------- */
-
-Template.items.created = function () {
-  //
-};
-
 Template.items.helpers({
-  //
+
+  myHelper: function () {
+    //
+  }
+
 });
 
-Template.items.rendered = function () {
-  //
-};
+Template.items..onCreated(function () {
+  var _this = this;
+
+});
+
+Template.items..onRendered(function () {
+  var _this = this;
+
+});
 
 Template.items.events({
-  //
+
 });

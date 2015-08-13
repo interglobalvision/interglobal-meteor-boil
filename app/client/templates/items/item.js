@@ -6,21 +6,23 @@ Code related to the item template
 
 /+ ---------------------------------------------------- */
 
-Template.item.created = function () {
-  //
-};
-
 Template.item.helpers({
-  
+
   myHelper: function () {
     //
   }
 
 });
 
-Template.item.rendered = function () {
-  //
-};
+Template.item..onCreated(function () {
+  var _this = this;
+
+});
+
+Template.item..onRendered(function () {
+  var _this = this;
+
+});
 
 Template.item.events({
 
