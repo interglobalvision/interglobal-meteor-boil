@@ -14,12 +14,12 @@ Template.item.helpers({
 
 });
 
-Template.item..onCreated(function () {
+Template.item.onCreated(function () {
   var _this = this;
 
 });
 
-Template.item..onRendered(function () {
+Template.item.onRendered(function () {
   var _this = this;
 
 });
