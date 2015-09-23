@@ -14,10 +14,11 @@ var gulp = require('gulp'),
  */
 gulp.task('lintjs', function () {
   return gulp.src([
+    'gulpfile.js',
     'app/**/*.js',
     '!app/.meteor/**/*.js',
     '!app/packages/**/*.js',
-    '!node_modules/**/*.js',
+    '!node_modules/**/*.js'
   ])
   .pipe(jshint())
   .pipe(jshint.reporter('default'))
@@ -30,10 +31,11 @@ gulp.task('lintjs', function () {
  */
 gulp.task('watch', function () {
   gulp.watch([
+    'gulpfile.js',
     'app/**/*.js',
     '!app/.meteor/**/*.js',
     '!app/packages/**/*.js',
-    '!node_modules/**/*.js',
+    '!node_modules/**/*.js'
   ], ['lintjs']);
 });
 
