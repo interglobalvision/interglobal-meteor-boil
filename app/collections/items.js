@@ -9,29 +9,29 @@ Items = new Meteor.Collection('items');
 
 Items.allow({
   insert: function(userId, doc) {
-    return can.createItem(userId);
+    return true;
   },
 
   update: function(userId, doc, fieldNames, modifier) {
-    return can.editItem(userId, doc);
+    return true;
   },
 
-  remove: function(userId, doc){
-    return can.removeItem(userId, doc);
+  remove: function(userId, doc) {
+    return true;
   },
 });
 
 // Methods
 
 Meteor.methods({
-  createItem: function(item){
-    if (can.createItem(Meteor.user())) {
+  createItem: function(item) {
+    if (true) {
       Items.insert(item);
     }
   },
 
-  removeItem: function(item){
-    if (can.removeItem(Meteor.user(), item)) {
+  removeItem: function(item) {
+    if (true) {
       Items.remove(item._id);
     } else {
       throw new Meteor.Error(403, 'You do not have the rights to delete this item.');

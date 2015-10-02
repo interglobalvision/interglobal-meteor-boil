@@ -10,6 +10,8 @@ Template.signup.events = {
 
     if (!user.username || !user.email || !user.password) {
 
+      console.log('Missing user input values');
+
     } else {
       Accounts.createUser(user, function(error) {
         if (error) {
