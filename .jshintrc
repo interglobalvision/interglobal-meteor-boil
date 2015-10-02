@@ -18,6 +18,12 @@
     "Mongo",
     "document",
     "jQuery",
-    "$"
+    "$",
+    "Accounts",
+    "Template",
+    "Router",
+    "Handlebars",
+    "TAPi18n",
+    "getUserLanguage"
   ]
 }
