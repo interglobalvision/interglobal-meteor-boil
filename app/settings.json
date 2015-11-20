@@ -1,0 +1,15 @@
+{
+    "key": "value",
+
+    "admin_email": "globie@interglobal.vision",
+    "admin_password": "editmefool",
+
+    "kadira": {
+      "appId": "",
+      "appSecret": ""
+    },
+
+    "public": {
+      "key": "value",
+    }
+}
