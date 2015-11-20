@@ -49,4 +49,32 @@ Router.map(function() {
 
   this.route('forgot');
 
+  // Boiler admin
+
+  this.route('admin', {
+    path: '/admin',
+    onBeforeAction: function() {
+      var userId = Meteor.userId();
+
+      if (Roles.userIsInRole(userId, 'admin')) {
+        this.next();
+      } else {
+        Router.go('/');
+      }
+    },
+
+    waitOn: function() {
+      return [
+        Meteor.subscribe('items'),
+      ];
+    },
+
+    data: function() {
+      return {
+        items: Items.find(),
+      };
+    },
+  });
+
 });
+
