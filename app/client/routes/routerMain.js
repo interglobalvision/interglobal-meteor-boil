@@ -23,6 +23,7 @@ var filters = {
       alert('Please Log In First.');
       this.stop();
     }
+    this.next();
   },
 
 };
