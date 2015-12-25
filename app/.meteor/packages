@@ -6,7 +6,6 @@
 
 autopublish
 insecure
-iron:router
 accounts-base
 accounts-password
 accounts-ui
@@ -29,3 +28,5 @@ spacebars
 check
 msavin:mongol
 alanning:roles
+kadira:flow-router
+kadira:blaze-layout

@@ -6,16 +6,30 @@ Code related to the item template
 
 /+ ---------------------------------------------------- */
 
+Template.item.onCreated(function () {
+  var template = this;
+  
+  // This replaces `waitOn`
+  template.autorun( function() {
+    template.subscribe('singleItem', FlowRouter.getParam('_id'));
+  });
+
+});
+
+
 Template.item.helpers({
+  ready: function() {
+    return Template.instance().subscriptionsReady();
+  },
+
+  // This replaces `data`
+  item: function() {
+    return Items.findOne(FlowRouter.getParam('_id'));
+  },
 
   myHelper: function () {
     //
   },
-
-});
-
-Template.item.onCreated(function () {
-  var _this = this;
 
 });
 
@@ -33,7 +47,7 @@ Template.item.events({
 
     Meteor.call('removeItem', _this, function(error, result) {
       alert('Item deleted.');
-      Router.go('/items');
+      FlowRouter.go('/items');
     });
   },
 
