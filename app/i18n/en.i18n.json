@@ -1,8 +1,16 @@
 {
-  "menu": {
+  "user": {
+    "username": "Username",
+    "password": "Password",
+    "forgotPassword": "Forgot password?",
+    "resetPassword": "Reset password",
+    "email": "Email",
     "login": "Log in",
     "signup": "Sign up",
-    "logout": "Log out",
+    "logout": "Log out"
+  },
+
+  "menu": {
     "content": "Content",
     "items": "Items"
   }

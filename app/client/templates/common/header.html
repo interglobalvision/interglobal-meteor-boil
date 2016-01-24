@@ -11,10 +11,10 @@
           <li><a href="{{pathFor 'items'}}">{{_ "menu.items"}}</a></li>
           <li><a href="/404">404 Link</a></li>
           {{#if isLoggedIn}}
-            <li><a href="/" class="log-out">{{_ "menu.logout"}}</a></li>
+            <li><a href="/" class="log-out">{{_ "user.logout"}}</a></li>
           {{else}}
-            <li><a href="{{pathFor 'signup'}}">{{_ "menu.signup"}}</a></li>
-            <li><a href="{{pathFor 'login'}}">{{_ "menu.login"}}</a></li>
+            <li><a href="{{pathFor 'signup'}}">{{_ "user.signup"}}</a></li>
+            <li><a href="{{pathFor 'login'}}">{{_ "user.login"}}</a></li>
           {{/if}}
         </ul>
       </div>
