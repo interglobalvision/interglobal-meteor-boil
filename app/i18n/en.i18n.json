@@ -1,6 +1,11 @@
 {
-  "menu-contentpage": "Content Page",
-  "menu-items": "Items"
+  "menu": {
+    "login": "Log in",
+    "signup": "Sign up",
+    "logout": "Log out",
+    "content": "Content",
+    "items": "Items"
+  }
 }
 
 // "with-variables": "Hey, %s! You have received %s new messages today."

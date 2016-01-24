@@ -1,6 +1,11 @@
 {
-  "menu-contentpage": "Contenido",
-  "menu-items": "Cosas"
+  "menu": {
+    "login": "Iniciar sesión",
+    "signup": "Registrar",
+    "logout": "Cerrar sesión",
+    "content": "Contenido",
+    "items": "Cosas"
+  }
 }
 
 // "with-variables": "Hey, %s! You have received %s new messages today."
